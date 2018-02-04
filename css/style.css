@@ -17,7 +17,7 @@ body {
     font-family: sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: #ffdc1a;
+    background-color: #222;
 }
 
 /* logo + nav + desc */
@@ -27,6 +27,7 @@ body {
     background-color: #222;
     width: 100%;
     padding: 15px 15px 0 15px;
+    border-bottom: 1px solid #ffdc1a;
 }
 #nav {
     display: block;
@@ -70,7 +71,8 @@ body {
 /* events + about */
 
 section {
-    padding: 10px 20px;
+    margin: 20px 0 10px 0;
+    padding-right: 30px;
     background-color: #222;
     font-family: 'Old Standard TT', serif;
     font-weight: normal;
@@ -84,12 +86,14 @@ section {
 section.active {
     opacity: 1;
     color: #ffdc1a;
+    outline: none;
 }
 section a {
     color: #fff;
 }
 section.active a {
     color: #ffdc1a;
+    outline: none;
 }
 section:last-child {
     border-bottom: none;
@@ -104,20 +108,28 @@ section h1 {
     font-weight: strong;
     font-size: 20px;
     color: #fff;
-    margin-top: 10px;
+    margin: 10px 20px 20px 18px;
 }
 section.active h1, 
 section.focus h1, 
 section.focus h1 {
     opacity: 1;
     color: #ffdc1a;
+    outline: none;
+}
+section p {
+    margin: 0 20px 10px 18px;
 }
 a {
-    text-decoration:none;
+    text-decoration: none;
+    outline: none;
 }
-
-a:visited{
+a:visited {
     color: black;
+    outline: none;
+}
+section img {
+    margin: 10px 30px 15px 18px;
 }
 #about {
     padding: 10px 20px;
