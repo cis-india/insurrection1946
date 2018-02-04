@@ -1,4 +1,4 @@
-# Insurrection1946
+# Insurrection 1946
 
 This map is created for the [Insurrection 1946 exhibition](http://insurrection1946.in/) by [Saman Goudarzi](https://github.com/samangoudarzi) at the [Centre for Internet and Society (CIS)](https://cis-india.org/), India, with help from [Sanjay Bhangar](https://github.com/batpad), [Shekhar Krishnan](http://shekhar.cc/), and [Sumandro Chattapadhyay](https://github.com/ajantriks). 
 
