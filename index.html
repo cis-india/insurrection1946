@@ -335,22 +335,27 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/gaman/cjcspd02i0cnh2sntpdsvuusm',
     center: [72.834,18.949],
-    zoom: 12,
+    zoom: 12
 });
+
 map.on('load', function() {
-    map.addLayer({
-        'id': 'wms-layer',
-        'type': 'raster',
-        'source': {
-            'type': 'raster',
-            'tiles': [
-                'http://mapwarper.net/maps/tile/26881/330/100/100.png '
-            ],
-        },
-        'paint': {}
-    }, 'aeroway-taxiway');
+  map.addLayer({
+    'id': 'warper-layer',
+    'type': 'raster',
+    'source': {
+      'type': 'raster',
+      'tiles': [
+        'https://api.mapbox.com/v4/sanjayb.50mwx1rl/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2FuamF5YiIsImEiOiJjamQ2M2hucTAwaDI2Mndxb2p3dXNxbmRhIn0.-vCHgT_HGq_iCa-qURd_ug'
+      ],
+      // 'tiles': [
+      //   'https://api.mapbox.com/v4/sanjayb.6g7047bl/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2FuamF5YiIsImEiOiJjamQ2M2hucTAwaDI2Mndxb2p3dXNxbmRhIn0.-vCHgT_HGq_iCa-qURd_ug'
+      // ],
+      'tileSize': 256
+    }
+  }, 'mutinymap-places-c2wktn');
 });
-    
+
+  
 var chapters = {
     'E1002': {
         center: [72.825808,18.916782],
