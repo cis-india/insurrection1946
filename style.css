@@ -82,6 +82,7 @@ section {
 }
 section.active {
     opacity: 1;
+    color: #ffdc1a;
 }
 section:last-child {
     border-bottom: none;
