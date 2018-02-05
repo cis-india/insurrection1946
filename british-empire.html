@@ -9,15 +9,15 @@
     <title>Insurrection 1946 - Map of British Empire</title>
     <link href='css/style.css' rel='stylesheet' />
     <!-- Mapbox API -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Google Fonts API -->
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
-    <!-- Lightbox -->
-    <link href="css/lightbox.css" rel="stylesheet">
 </head>
 <body>
+ <style>
+</style>
 <div id='map'></div>
 <div id='features'>
     <div id="navbar">
@@ -29,19 +29,18 @@
                 <a href="index.html">Bombay</a>
                 <a href="south-asia.html">South Asia</a>
                 <a href="british-empire.html">British Empire</a>
-                <a href="http://insurrection1946.in/" target="_blank">The Exhibition</a>
+                <a href="http://insurrection1946.in/">The Exhibition</a>
                 <a href="#about">About the Map</a>
             </div>
             <div id="desc">
                 <h1>Map of British Empire</h1>
-                <p>On 18 February 1946, a mutiny was declared on the HMIS Talwar, the Signal Training Establishment of the Royal Indian Navy, at Colaba, Bombay. A total of around 10,000 naval ratings took charge of 66 ships and on-shore naval establishments. On the fourth day of the strike the city’s industrial workers joined the struggle, and Bombay closed down. The curfew that followed ended with over 200 people killed on the streets. Ranged against the strikers was the might of the British armed forces, on sea, air and land, threatening ‘if necessary’ to wipe out the Navy.</p>
-				<p>It lasted six days. Widely considered a 'failure' in its time, seventy years on, the naval insurrection refuses to be assimilated into any single narrative of history. It was a challenge to the Empire, shaking up a British patrician state and an imperial order, the full might of which was on display in the events that took place in Bombay. These maps move, in a progressively expanding narrative, from the events in the city to those in India and the British Empire.</p>
+                <p>Brief description of the exhibition and the map.</p>
                 <p>Please scroll down to follow the events.</p>
             </div>
         </div>
     </div>
     <a href="#Start"><section id='Start' class='active'>
-       </section></a>
+    </section></a>
         <a href="#E3016"><section id='E3016'>
         <h3>August17, 1945 Jakarta </h3>
         <p>Sukarno declares Indonesian independence. The period ended with the departure of the British military in 1946, by which time the Dutch had rebuilt their military capacity. Meanwhile, the Indonesian revolutionary fighters are well into the process of forming a formal military. Bersiap: a violent and chaotic phase of the Indonesian National Revolution following the end of World War II. The Indonesian word bersiap means 'get ready' or 'be prepared', and the period lasts from August 1945 to December 1946. The last Japanese troops are evacuated by July 1946.</p>
@@ -131,7 +130,7 @@
     </section></a>
     <div id="about">
         <h1>About the Map</h1>
-        <p>This map is created for the <a href="http://insurrection1946.in/">Insurrection 1946 exhibition</a> by <a href="https://github.com/samangoudarzi">Saman Goudarzi</a> and <a href="https://github.com/ajantriks">Sumandro Chattapadhyay</a> at the <a href="http://cis-india.org/">Centre for Internet and Society (CIS)</a>, India, with help from <a href="https://github.com/batpad">Sanjay Bhangar</a> and <a href="http://shekhar.cc/">Shekhar Krishnan</a>. Events, locations, and images are selected and compiled by <a href="https://cscsarchive.academia.edu/AshishRajadhyaksha">Ashish Rajadhyaksha</a> and <a href="https://github.com/samangoudarzi">Saman Goudarzi</a>. Data/image credits. Developed using <a href="https://www.mapbox.com/">Mapbox</a>, <a href="http://mapwarper.net/">MapWarper</a>, and <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox</a>.</p>
+        <p>This map is created for the <a href="http://insurrection1946.in/">Insurrection 1946 exhibition</a> by <a href="https://github.com/samangoudarzi">Saman Goudarzi</a> at the <a href="http://cis-india.org/">Centre for Internet and Society (CIS)</a>, India, with help from <a href="https://github.com/batpad">Sanjay Bhangar</a>, <a href="http://shekhar.cc/">Shekhar Krishnan</a>, and <a href="https://github.com/ajantriks">Sumandro Chattapadhyay</a>. Location data and images are selected and compiled by <a href="https://cscsarchive.academia.edu/AshishRajadhyaksha">Ashish Rajadhyaksha</a> and <a href="https://github.com/samangoudarzi">Saman Goudarzi</a>. Data/image credits. Attribution to <a href="https://www.mapbox.com/">Mapbox</a> and <a href="http://mapwarper.net/">MapWarper</a>.</p>
     </div>
 </div>
 <!-- location data for the map -->
@@ -156,118 +155,111 @@ map.on('load', function() {
         'paint': {}
     }, 'aeroway-taxiway');
 });
+    
 var chapters = {
     'E3016':{
-        center: [72.838199,18.930336],
-        //NEED TO FIX
-        zoom:15,
+        center: [108.929,-1.456],
+        zoom:4.3,
         speed:0.8, 
         pitch: 0
     },
     'E3015':{
-        center: [72.838199,18.930336],
-        //NEED TO FIX
-        zoom:15,
+        center: [111.222,-5.017],
+        zoom:4.3,
         speed:0.8,
         pitch: 0
     },
     'E3010':{
         center: [-0.126452,51.504687],
-        zoom:15,
+        zoom: 5.2,
         speed:0.8,
         pitch: 0
     },
     'E3002':{
         center: [45.004663,12.769301],
-        zoom:15,
+        zoom: 5.2,
         speed:0.8,
         pitch: 0
     },
     'E3001':{
-        center: [72.838199,18.930336],
-        //NEED TO FIX
-        zoom:15,
+        center: [50.478,26.133],
+        zoom:5,
         speed:0.8,
         pitch: 0
     },
     'E3014':{
         center: [72.838199,18.930336],
-        //NEED TO FIX
-        zoom:15,
+        zoom: 5,
         speed:0.8,
         pitch: 0
     },
     'E3005':{
-        center: [72.838199,18.930336],
-        //NEED TO FIX
-        zoom:15,
+        center: [77.102,28.488],
+        zoom:5,
         speed:0.8,
         pitch: 0
     },
     'E3007':{
-        center: [72.838199,18.930336],
-        //NEED TO FIX
-        zoom:15,
+        center: [-2.245,52.895],
+        zoom:4.7,
         speed:0.8,
         pitch: 0
     },
     'E3008':{
         center: [-0.126452,51.504687],
-        zoom:15,
+        zoom:4.7,
         speed:0.8,
         pitch: 0
     },
     'E3009':{
         center: [-0.126452,51.504687],
-        zoom:15, 
+        zoom:4.7, 
         speed:0.8,
         pitch: 0
     },
     'E3013':{
         center: [72.838199,18.930336],
         //NEED TO FIX
-        zoom:15,
+        zoom: 5.2,
         speed:0.8,
         pitch: 0
     },
     'E3006':{
-        center: [72.838199,18.930336],
-        //NEED TO FIX
-        zoom:15,
+        center: [-0.126452,51.504687],
+        zoom:4.7,
         speed:0.8,
         pitch: 0
     },
     'E1039A':{
         center: [-0.126452,51.504687],
-        zoom:15,
+        zoom: 5.2,
         speed:0.8,
         pitch: 0
     },
     'E3004':{
         center: [72.838199,18.930336],
         //NEED TO FIX
-        zoom:15,
+        zoom: 5.2,
         speed:0.8,
         pitch: 0
     },
     'E3011':{
         center: [72.838199,18.930336],
         //NEED TO FIX
-        zoom:15,
+        zoom: 5.2,
         speed:0.8,
         pitch: 0
     },
     'E3012':{
         center: [72.838199,18.930336],
         //NEED TO FIX
-        zoom:15,
+        zoom: 5.2,
         speed:0.8,
         pitch: 0
     },
     'E3003':{
-        center: [72.838199,18.930336],
-        //NEED TO FIX
-        zoom:15,
+        center: [80.277,14.018],
+        zoom:5.7,
         speed:0.8,
         pitch: 0
     }
@@ -303,7 +295,6 @@ $('a[href*=#]').click(function(event){
     event.preventDefault();
 });
 </script>
-<!-- Lightbox -->
-<script src="js/lightbox.js"></script>
+
 </body>
 </html>
