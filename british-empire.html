@@ -9,7 +9,7 @@
     <title>Insurrection 1946 - Map of British Empire</title>
     <link href='css/style.css' rel='stylesheet' />
     <!-- Mapbox API -->
-    <script src="jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Google Fonts API -->
@@ -72,15 +72,15 @@
     <a href="#E3014"><section id='E3014'>
         <h1>February 20, 1946  2320</h1>
         <p>From Govt of India, War Dept to Secretary of State</p>
-        <a href="img/E1008a.jpg" data-lightbox="image-1"><img src="img/E3014.jpg" alt="E3014">
+        <a href="img/E3014.jpg" data-lightbox="image-1"><img src="img/E3014.jpg" alt="E3014">
     </section></a>
     <a href="#E3005"><section id='E3005'>
-        <h1>February21, 1946 New Delhi 2320</h1>
+        <h1>February 21, 1946 New Delhi 2320</h1>
         <p>From Government of India, War Department</p>
-        <a href="img/E1008a.jpg" data-lightbox="image-1"><img src="img/E3005.jpg" alt="E3005">
+        <a href="img/E3005.jpg" data-lightbox="image-1"><img src="img/E3005.jpg" alt="E3005">
     </section></a>
     <a href="#E3007"><section id='E3007'>
-        <h1>February21, 1946 Parliament, London 1610</h1>
+        <h1>February 21, 1946 Parliament, London 1610</h1>
         <p>Prime Minister was pressed in the House of Commons...'</p>
         <a href="img/E3007.jpg" data-lightbox="image-1"><img src="img/E3007.jpg" alt="E3007"></a>
     </section></a>
@@ -95,8 +95,8 @@
         <a href="img/E3009.jpg" data-lightbox="image-1"><img src="img/E3009.jpg" alt="E3009"></a>
     </section></a>
     <a href="#E3013"><section id='E3013'>
-        <h1>February 22, 1946 Bombay 30</h1>
-        <p>From Governor of Bombay to Secretary of State for India </p>
+        <h1>February 22, 1946 Bombay 0030</h1>
+        <p>From Governor of Bombay to Secretary of State for India</p>
         <a href="img/E3013.jpg" data-lightbox="image-1"><img src="img/E3013.jpg" alt="E3013"></a>
     </section></a>
     <a href="#E3006"><section id='E3006'>
@@ -105,7 +105,7 @@
         <a href="img/E3006.jpg" data-lightbox="image-1"><img src="img/E3006.jpg" alt="E3006"></a>
     </section></a>
     <a href="#E1039A"><section id='E1039A'>
-        <h1>February 22, 1946 Whitehall, London 100</h1>
+        <h1>February 22, 1946 Whitehall, London 0100</h1>
         <p>We all hope that wiser counsels prevail'.</p>
         <!--this event has no image-->
     </section></a>
@@ -132,9 +132,12 @@
 
     <div id="about">
         <h1>About the Map</h1>
-        <p>This map is created for the <a href="http://insurrection1946.in/">Insurrection 1946 exhibition</a> by <a href="https://github.com/samangoudarzi">Saman Goudarzi</a> at the <a href="http://cis-india.org/">Centre for Internet and Society (CIS)</a>, India, with help from <a href="https://github.com/batpad">Sanjay Bhangar</a>, <a href="http://shekhar.cc/">Shekhar Krishnan</a>, and <a href="https://github.com/ajantriks">Sumandro Chattapadhyay</a>. Location data and images are selected and compiled by <a href="https://cscsarchive.academia.edu/AshishRajadhyaksha">Ashish Rajadhyaksha</a> and <a href="https://github.com/samangoudarzi">Saman Goudarzi</a>. Data/image credits. Attribution to <a href="https://www.mapbox.com/">Mapbox</a> and <a href="http://mapwarper.net/">MapWarper</a>.</p>
+        <p>This map is created for the <a href="http://insurrection1946.in/">Insurrection 1946 exhibition</a> by <a href="https://github.com/samangoudarzi">Saman Goudarzi</a> at the <a href="http://cis-india.org/">Centre for Internet and Society (CIS)</a>, India, with help from <a href="https://github.com/batpad">Sanjay Bhangar</a>, <a href="http://shekhar.cc/">Shekhar Krishnan</a>, and <a href="https://github.com/ajantriks">Sumandro Chattapadhyay</a>. Location data and images are selected and compiled by <a href="https://cscsarchive.academia.edu/AshishRajadhyaksha">Ashish Rajadhyaksha</a> and <a href="https://github.com/samangoudarzi">Saman Goudarzi</a>. Attribution to <a href="https://www.mapbox.com/">Mapbox</a> and <a href="http://mapwarper.net/">MapWarper</a>.</p>
     </div>
 </div>
+<!-- Lightbox -->
+<script src="js/lightbox.js">
+</script>
 <!-- location data for the map -->
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FtYW4iLCJhIjoiY2lzajQ2N2YzMDF4cjJ1cHVsdzd1b2ZlOCJ9.K6uUaMmeJ16TFmaORHcp0g';
@@ -299,7 +302,5 @@ $('a[href*=#]').click(function(event){
     event.preventDefault();
 });
 </script>
-<!-- Lightbox -->
-<script src="js/lightbox.js"></script>
 </body>
 </html>

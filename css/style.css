@@ -145,6 +145,7 @@ section img {
     line-height: 25px;
     cursor: pointer;
     border-top: 1px solid #ffdc1a;
+    margin-top: 20px;
 }
 #about h1 {
     font-weight: strong;
