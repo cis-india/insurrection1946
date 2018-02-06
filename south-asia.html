@@ -363,9 +363,9 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/gaman/cjdbrzs5eaaet2rqeoynvabsa',
     center: [80.011,24.062], //starting centre
-    zoom: 3.6, //starting zoom
-    maxZoom: 4.5 //cap on how far they can zoom in
-    //minZoom: 2 cap on how far they can zoom out
+    zoom: 3.6,      //  starting zoom
+    maxZoom: 5,   //  cap on how far they can zoom in
+    minZoom: 3      //  cap on how far they can zoom out
 });
 map.on('load', function() {
     map.addLayer({
