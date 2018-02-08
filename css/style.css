@@ -162,4 +162,9 @@ section img {
     color: #ffdc1a;
     text-decoration: underline;
 }
+//POPUP 
+mapboxgl-popup {
+    max-width: 400px;
+    font: 10px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
 
