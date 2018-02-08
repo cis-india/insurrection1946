@@ -351,6 +351,18 @@ map.on('load', function() {
     }
   }, 'inserruction1946-places-7w6tou');
 });
+map.on('click', 'inserruction1946-rinfleet', function (e) {
+        new mapboxgl.Popup()
+            .setLngLat(e.features[0].geometry.coordinates)
+            .setHTML(e.features[0].properties.Popup)
+            .addTo(map);
+    });
+map.on('mouseenter', 'inserruction1946-rinfleet', function () {
+    map.getCanvas().style.cursor = 'pointer';
+    });
+map.on('mouseleave', 'inserruction1946-rinfleet', function () {
+    map.getCanvas().style.cursor = '';
+    });
 var chapters = {
     'E1002': {
         center: [72.825808,18.916782],
