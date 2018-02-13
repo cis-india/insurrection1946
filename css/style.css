@@ -15,7 +15,8 @@ body {
     margin-left: 50%;
     color: black;
     font-family: sans-serif;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     background-color: #222;
 }
 
