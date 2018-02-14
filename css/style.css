@@ -162,9 +162,20 @@ section img {
     color: #ffdc1a;
     text-decoration: underline;
 }
-//POPUP 
+/*  Popup */
 mapboxgl-popup {
     max-width: 400px;
     font: 10px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
-
+/*  Scroll to Top */
+.scrollup {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    text-indent: -9999px;
+    background: url('icon_top.png') no-repeat;
+    background-color: #000;
+}
