@@ -176,6 +176,5 @@ mapboxgl-popup {
     right: 100px;
     display: none;
     text-indent: -9999px;
-    background: url('icon_top.png') no-repeat;
-    background-color: #000;
+    background: url('noun_886559_cc_scrolltotop.png') no-repeat;
 }
