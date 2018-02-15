@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+    <a href="#" class="scrollup" style="display: none;"><img src="../img/noun_886559_cc_scrolltotop.png" alt="Scroll to Top"></a>
     <a href="#Start"><section id='Start' class='active'>
     </section></a>
     <a href="#E1002"><section id='E1002'>
@@ -230,7 +231,6 @@
     <a href="#E1042"><section id='E1042'>
         <h1>February 22, 1946 HMIS Talwar 2330</h1>
         <p>The final historic session of the Naval Central Strike Committee began at last. It lasted till morning. About thirty six people were present. Khan gave a detailed report of his talks with Sardar Patel and the FOB. He said that the decision of the NCSC must reach the FOB by 6:30 in the morning. Otherwise the armed truce would be over and the entire force at his disposal would be used against the ratings. Once again he advised surrender. For a few minutes there was an uproar. Except for a small minority, everyone was opposed to the idea of surrender. That was the directive they had received from the ratings they represented. There could be no unconditional surrender. That would only be inviting defeat at the moment of victory. As one of the ratings put it: "We cannot surrender now. We are about to win our demands”.</p>
-       <!--CHECK WITH ASHISH-->
     </section></a>
     <a href="#E1042a"><section id='E1042a'>
         <h1>February 22, 1946 Castle Barracks 2400</h1>
@@ -256,13 +256,11 @@
         <h1>February 19, 1946 RIAF Camp, Dhobi Talao 1230</h1>
         <p>The strike of the men of the RIAF Camp at Marine Drive was called off following a meeting with the Air Commodore Cracroft. The strike was over food, better service conditions, elected representation for Indian airmen to the Central Assembly, Gratuity and deferred pay on release, war bonus, clothing allowance and establishment of welfare boards.</p>
         <a href="img/E1063.jpg" data-lightbox="image-1"><img src="img/E1063.jpg" alt="E1063"></a>
-        <!--CHECK WITH ASHISH-->
     </section></a>
     <a href="#E1064"><section id='E1064'>
         <h1>February 20, 1946 HMIS Cheetah 0900</h1>
         <p>Mutiny spreads to the Cheetah: About the Kakauri and the Cheetah, it may be mentioned that they wwere demobilization centres and men who reached these establishments were due to leave the Service within ten days. The mutiny was more or less a parting kick to the Service.</p>
         <a href="img/E1063.jpg" data-lightbox="image-1"><img src="img/E1063.jpg" alt="E1063"></a>
-        <!--CHECK WITH ASHISH-->
     </section></a>
     <a href="#E1048"><section id='E1048'>
         <h1>February 25, 1946 Castle Barracks 1000</h1>
@@ -321,7 +319,7 @@
     </section></a>
     <div id="about">
         <h1>About the Map</h1>
-        <p>This map is created for the <a href="http://insurrection1946.in/">Insurrection 1946 exhibition</a> by <a href="https://github.com/samangoudarzi">Saman Goudarzi</a> and <a href="https://github.com/ajantriks">Sumandro Chattapadhyay</a> at the <a href="http://cis-india.org/">Centre for Internet and Society (CIS)</a>, India, with help from <a href="https://github.com/batpad">Sanjay Bhangar</a> and <a href="http://shekhar.cc/">Shekhar Krishnan</a>. Events, locations, and images are selected and compiled by <a href="https://cscsarchive.academia.edu/AshishRajadhyaksha">Ashish Rajadhyaksha</a> and <a href="https://github.com/samangoudarzi">Saman Goudarzi</a>. Developed using <a href="https://www.mapbox.com/">Mapbox</a>, <a href="http://mapwarper.net/">MapWarper</a>, and <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox</a>. We used <a href="https://thenounproject.com/search/?q=factory&i=1151990" target="_blank">Factory</a>, <a href="https://thenounproject.com/search/?q=revolt&i=577562#" target="_blank">Fist</a>, <a href="https://thenounproject.com/search/?q=cop&i=774159" target="_blank">Police Officer</a>, <a href="https://thenounproject.com/search/?q=transmission&i=63765" target="_blank">Transmission</a>, and <a href="https://thenounproject.com/search/?q=battleship&i=589535" target="_blank">Warship</a> icons available from <a href="https://thenounproject.com/" target="_blank">the Noun project</a>.</p>
+        <p>This map is created for the <a href="http://insurrection1946.in/">Insurrection 1946 exhibition</a> by <a href="https://github.com/samangoudarzi">Saman Goudarzi</a> and <a href="https://github.com/ajantriks">Sumandro Chattapadhyay</a> at the <a href="http://cis-india.org/">Centre for Internet and Society (CIS)</a>, India, with help from <a href="https://github.com/batpad">Sanjay Bhangar</a> and <a href="http://shekhar.cc/">Shekhar Krishnan</a>. Events, locations, and images are selected and compiled by <a href="https://cscsarchive.academia.edu/AshishRajadhyaksha">Ashish Rajadhyaksha</a> and <a href="https://github.com/samangoudarzi">Saman Goudarzi</a>. Developed using <a href="https://www.mapbox.com/">Mapbox</a>, <a href="http://mapwarper.net/">MapWarper</a>, and <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox</a>. We used <a href="https://thenounproject.com/search/?q=factory&i=1151990" target="_blank">Factory</a>, <a href="https://thenounproject.com/search/?q=revolt&i=577562#" target="_blank">Fist</a>, <a href="https://thenounproject.com/search/?q=cop&i=774159" target="_blank">Police Officer</a>, <a href="https://thenounproject.com/search/?q=transmission&i=63765" target="_blank">Transmission</a>, <a href="https://thenounproject.com/search/?q=battleship&i=589535" target="_blank">Warship</a>, and <a href="https://thenounproject.com/search/?q=scroll%20to%20top&i=886559" target="_blank">Top</a>  icons available from <a href="https://thenounproject.com/" target="_blank">the Noun project</a>.</p>
     </div>
 </div>
 <!-- location data for the map -->
@@ -779,6 +777,22 @@ $('a[href*=#]').click(function(event){
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     event.preventDefault();
+});
+//Scroll to Top
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
 });
 </script>
 <!-- Lightbox -->
