@@ -176,14 +176,6 @@ mapboxgl-popup {
     position: fixed;
     width: 40px;
     height: 40px;
-<<<<<<< HEAD
-    bottom: -0.1em;
-<<<<<<< HEAD
-    right: 1em;
-=======
-=======
     bottom: 0em;
->>>>>>> c2a93d122e74a4547ac02af7f3f2056151d73f4c
     right: 0.5em;
->>>>>>> f9baeae5d75941d5734fb2d3776353eaff9ac4e4
 }
