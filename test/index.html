@@ -40,7 +40,6 @@
             </div>
         </div>
     </div>
-    <a href="#" class="scrollup" style="display: none;"><img src="../img/noun_886559_cc_scrolltotop.png" alt="Scroll to Top"></a>
     <a href="#Start"><section id='Start' class='active'>
     </section></a>
     <a href="#E1002"><section id='E1002'>
@@ -389,7 +388,7 @@ var chapters = {
     },
      'E1007': {
         center: [72.825808,18.916782],
-        zoom: 15,
+        zoom: 15.5,
         speed: 1,
         pitch: 0
     },
@@ -409,7 +408,7 @@ var chapters = {
     'E1010': {
         bearing: 0,
         center: [72.834363,18.937825], //location changed
-        zoom: 11,
+        zoom: 13,
         speed: 0.5,
         pitch: 0
     },
@@ -780,25 +779,6 @@ $('a[href*=#]').click(function(event){
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     event.preventDefault();
-});
-//Scroll to Top
-$(document).ready(function () {
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
-        } else {
-            $('.scrollup').fadeOut();
-        }
-    });
-
-    $('.scrollup').click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 600);
-        return false;
-    });
-
 });
 </script>
 <!-- Lightbox -->
