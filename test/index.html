@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+    <a href="#" class="scrollup" style="display: none;"><img src="../img/scrolltotop.png" alt="Scroll to Top"></a>
     <a href="#Start"><section id='Start' class='active'>
     </section></a>
     <a href="#E1002"><section id='E1002'>
@@ -331,8 +332,8 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/gaman/cjcspd02i0cnh2sntpdsvuusm',
     center: [72.844,18.959],
-    zoom: 11.5
-   // maxZoom: 13.2,      //  the max you can zoom in 
+    zoom: 11.5,
+    maxZoom: 16.6      //  the max you can zoom in 
    // minZoom: 10         //  the max you can zoom out
 });
 map.on('load', function() {
@@ -681,14 +682,14 @@ var chapters = {
     },
     'E1055': {
         bearing: 0,
-        center: [72.864,19.080],
+        center: [72.904,19.085],
         speed: 0.5,
         zoom: 14.1,
         pitch: 0
     },
     'E1062': {
         bearing: 0,
-        center: [72.864,19.080],
+        center: [72.904,19.085],
         speed: 0.5,
         zoom: 14.1,
         pitch: 0
@@ -776,6 +777,22 @@ $('a[href*=#]').click(function(event){
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     event.preventDefault();
+});
+//Scroll to Top
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
 });
 </script>
 <!-- Lightbox -->
