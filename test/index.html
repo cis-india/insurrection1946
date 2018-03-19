@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+    <a href="#" class="scrollup" style="display: none;"><img src="img/scrolltotop.png" alt="Scroll to Top"></a>
     <a href="#Start"><section id='Start' class='active'>
     </section></a>
     <a href="#E1002"><section id='E1002'>
@@ -776,6 +777,22 @@ $('a[href*=#]').click(function(event){
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     event.preventDefault();
+});
+//Scroll to Top
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
 });
 </script>
 <!-- Lightbox -->
