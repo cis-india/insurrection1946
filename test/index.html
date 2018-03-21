@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+    <a href="#" class="scrollup" style="display: none;"><img src="../img/scrolltotop.png" alt="Scroll to Top"></a>
     <a href="#Start"><section id='Start' class='active'>
     </section></a>
     <a href="#E1002"><section id='E1002'>
@@ -319,9 +320,9 @@
         <p>Conditions in the RIN today</p>
         <a href="../img/E1050.jpg" data-lightbox="image-1"><img src="../img/E1050.jpg" alt="E1050"></a>
     </section></a>
-    <div id="about">
+   <div id="about">
         <h1>About the Map</h1>
-        <p>This map is created for the <a href="http://insurrection1946.in/">Insurrection 1946 exhibition</a> by <a href="https://github.com/samangoudarzi">Saman Goudarzi</a> and <a href="https://github.com/ajantriks">Sumandro Chattapadhyay</a> at the <a href="http://cis-india.org/">Centre for Internet and Society (CIS)</a>, India, with help from <a href="https://github.com/batpad">Sanjay Bhangar</a> and <a href="http://shekhar.cc/">Shekhar Krishnan</a>. Events, locations, and images are selected and compiled by <a href="https://cscsarchive.academia.edu/AshishRajadhyaksha">Ashish Rajadhyaksha</a> and <a href="https://github.com/samangoudarzi">Saman Goudarzi</a>. Developed using <a href="https://www.mapbox.com/">Mapbox</a>, <a href="http://mapwarper.net/">MapWarper</a>, and <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox</a>. We used <a href="https://thenounproject.com/search/?q=factory&i=1151990" target="_blank">Factory</a>, <a href="https://thenounproject.com/search/?q=revolt&i=577562#" target="_blank">Fist</a>, <a href="https://thenounproject.com/search/?q=cop&i=774159" target="_blank">Police Officer</a>, <a href="https://thenounproject.com/search/?q=transmission&i=63765" target="_blank">Transmission</a>, and <a href="https://thenounproject.com/search/?q=battleship&i=589535" target="_blank">Warship</a> icons available from <a href="https://thenounproject.com/" target="_blank">the Noun project</a>.</p>
+        <p>This map is created for the <a href="http://insurrection1946.in/">Insurrection 1946 exhibition</a> by <a href="https://github.com/samangoudarzi">Saman Goudarzi</a> and <a href="https://github.com/ajantriks">Sumandro Chattapadhyay</a> at the <a href="http://cis-india.org/">Centre for Internet and Society (CIS)</a>, India, with help from <a href="https://github.com/batpad">Sanjay Bhangar</a> and <a href="http://shekhar.cc/">Shekhar Krishnan</a>. Events, locations, and images are selected and compiled by <a href="https://cscsarchive.academia.edu/AshishRajadhyaksha">Ashish Rajadhyaksha</a> and <a href="https://github.com/samangoudarzi">Saman Goudarzi</a>. Developed using <a href="https://www.mapbox.com/">Mapbox</a>, <a href="http://mapwarper.net/">MapWarper</a>, and <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox</a>. We used <a href="https://thenounproject.com/search/?q=factory&i=1151990" target="_blank">Factory</a>, <a href="https://thenounproject.com/search/?q=revolt&i=577562#" target="_blank">Fist</a>, <a href="https://thenounproject.com/search/?q=cop&i=774159" target="_blank">Police Officer</a>, <a href="https://thenounproject.com/search/?q=scroll%20to%20top&i=886559" target="_blank">Top</a>, <a href="https://thenounproject.com/search/?q=transmission&i=63765" target="_blank">Transmission</a>, and <a href="https://thenounproject.com/search/?q=battleship&i=589535" target="_blank">Warship</a> icons available from <a href="https://thenounproject.com/" target="_blank">the Noun project</a>.</p>
     </div>
 </div>
 <!-- location data for the map -->
@@ -331,8 +332,8 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/gaman/cjcspd02i0cnh2sntpdsvuusm',
     center: [72.844,18.959],
-    zoom: 11.5
-   // maxZoom: 13.2,      //  the max you can zoom in 
+    zoom: 11.5,
+    maxZoom: 16.6      //  the max you can zoom in 
    // minZoom: 10         //  the max you can zoom out
 });
 map.on('load', function() {
@@ -341,12 +342,12 @@ map.on('load', function() {
     'type': 'raster',
     'source': {
       'type': 'raster',
+     // 'tiles': [
+       // 'https://api.mapbox.com/v4/sanjayb.50mwx1rl/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2FuamF5YiIsImEiOiJjamQ2M2hucTAwaDI2Mndxb2p3dXNxbmRhIn0.-vCHgT_HGq_iCa-qURd_ug'
+      //],
       'tiles': [
-        'https://api.mapbox.com/v4/sanjayb.50mwx1rl/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2FuamF5YiIsImEiOiJjamQ2M2hucTAwaDI2Mndxb2p3dXNxbmRhIn0.-vCHgT_HGq_iCa-qURd_ug'
-      ],
-      // 'tiles': [
-      //   'http://mapwarper.net/maps/tile/405/{z}/{x}/{y}.png'
-      // ],
+      'https://mapwarper.net/maps/tile/24515/{z}/{x}/{y}.png '
+       ],
       'tileSize': 256
     }
   }, 'inserruction1946-places-7w6tou');
@@ -681,14 +682,14 @@ var chapters = {
     },
     'E1055': {
         bearing: 0,
-        center: [72.864,19.080],
+        center: [72.904,19.085],
         speed: 0.5,
         zoom: 14.1,
         pitch: 0
     },
     'E1062': {
         bearing: 0,
-        center: [72.864,19.080],
+        center: [72.904,19.085],
         speed: 0.5,
         zoom: 14.1,
         pitch: 0
@@ -776,6 +777,22 @@ $('a[href*=#]').click(function(event){
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     event.preventDefault();
+});
+//Scroll to Top
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
 });
 </script>
 <!-- Lightbox -->
