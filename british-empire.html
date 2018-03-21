@@ -151,16 +151,16 @@ var map = new mapboxgl.Map({
 });
 map.on('load', function() {
     map.addLayer({
-        'id': 'warper-layer',
+        'id': 'wms-layer',
         'type': 'raster',
         'source': {
             'type': 'raster',
             'tiles': [
-                'https://mapwarper.net/maps/tile/26881/330/100/100.png ' 
-       ],
-      'tileSize': 256
-    }
-  }, 'inserruction1946-places-7w6tou');
+                'https://mapwarper.net/maps/tile/26881/330/100/100.png '
+            ],
+        },
+        'paint': {}
+    }, 'aeroway-taxiway');
 });
 map.on('click', 'inserruction1946-rinfleet', function (e) {
         new mapboxgl.Popup()
