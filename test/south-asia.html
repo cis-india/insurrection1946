@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+     <a href="#" class="scrollup" style="display: none;"><img src="img/scrolltotop.png" alt="Scroll to Top"></a>
     <a href="#Start"><section id='Start' class='active'>
     </section></a>
     <a href="#E2054"><section id='E2054'>
@@ -356,7 +357,7 @@
     </section></a>
     <div id="about">
         <h1>About the Map</h1>
-        <p>This map is created for the <a href="http://insurrection1946.in/">Insurrection 1946 exhibition</a> by <a href="https://github.com/samangoudarzi">Saman Goudarzi</a> and <a href="https://github.com/ajantriks">Sumandro Chattapadhyay</a> at the <a href="http://cis-india.org/">Centre for Internet and Society (CIS)</a>, India, with help from <a href="https://github.com/batpad">Sanjay Bhangar</a> and <a href="http://shekhar.cc/">Shekhar Krishnan</a>. Events, locations, and images are selected and compiled by <a href="https://cscsarchive.academia.edu/AshishRajadhyaksha">Ashish Rajadhyaksha</a> and <a href="https://github.com/samangoudarzi">Saman Goudarzi</a>. Developed using <a href="https://www.mapbox.com/">Mapbox</a>, <a href="http://mapwarper.net/">MapWarper</a>, and <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox</a>. We used <a href="https://thenounproject.com/search/?q=factory&i=1151990" target="_blank">Factory</a>, <a href="https://thenounproject.com/search/?q=revolt&i=577562#" target="_blank">Fist</a>, <a href="https://thenounproject.com/search/?q=cop&i=774159" target="_blank">Police Officer</a>, <a href="https://thenounproject.com/search/?q=transmission&i=63765" target="_blank">Transmission</a>, and <a href="https://thenounproject.com/search/?q=battleship&i=589535" target="_blank">Warship</a> icons available from <a href="https://thenounproject.com/" target="_blank">the Noun project</a>.</p>
+        <p>This map is created for the <a href="http://insurrection1946.in/">Insurrection 1946 exhibition</a> by <a href="https://github.com/samangoudarzi">Saman Goudarzi</a> and <a href="https://github.com/ajantriks">Sumandro Chattapadhyay</a> at the <a href="http://cis-india.org/">Centre for Internet and Society (CIS)</a>, India, with help from <a href="https://github.com/batpad">Sanjay Bhangar</a> and <a href="http://shekhar.cc/">Shekhar Krishnan</a>. Events, locations, and images are selected and compiled by <a href="https://cscsarchive.academia.edu/AshishRajadhyaksha">Ashish Rajadhyaksha</a> and <a href="https://github.com/samangoudarzi">Saman Goudarzi</a>. Developed using <a href="https://www.mapbox.com/">Mapbox</a>, <a href="http://mapwarper.net/">MapWarper</a>, and <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox</a>. We used <a href="https://thenounproject.com/search/?q=factory&i=1151990" target="_blank">Factory</a>, <a href="https://thenounproject.com/search/?q=revolt&i=577562#" target="_blank">Fist</a>, <a href="https://thenounproject.com/search/?q=cop&i=774159" target="_blank">Police Officer</a>, <a href="https://thenounproject.com/search/?q=scroll%20to%20top&i=886559" target="_blank">Top</a>, <a href="https://thenounproject.com/search/?q=transmission&i=63765" target="_blank">Transmission</a>, and <a href="https://thenounproject.com/search/?q=battleship&i=589535" target="_blank">Warship</a> icons available from <a href="https://thenounproject.com/" target="_blank">the Noun project</a>.</p>
     </div>
 </div>
 <!-- Lightbox -->
@@ -803,6 +804,22 @@ $('a[href*=#]').click(function(event){
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     event.preventDefault();
+});
+//Scroll to Top
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
 });
 </script>
 </body>
