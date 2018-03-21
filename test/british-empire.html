@@ -141,13 +141,19 @@
 <!-- location data for the map -->
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FtYW4iLCJhIjoiY2lzajQ2N2YzMDF4cjJ1cHVsdzd1b2ZlOCJ9.K6uUaMmeJ16TFmaORHcp0g';
+// Set bounds 
+var bounds = [
+    [107.517,-18.027], // Southeast coordinates
+    [77.707, 28.873]  // Northwest coordinates
+];
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/gaman/cjdeg8r1wejef2tokoriixi5q',
-    center: [55.511,35.498],    // starting centre position
+    center: [55.511,30.498],    // starting centre position
     zoom: 1.8,                  // starting zoom level
-    maxZoom: 6,                 // cap on how far they can zoom in
-    minZoom: 1.8                // cap on how far they can zoom out
+    maxZoom: 4,                 // cap on how far they can zoom in
+    minZoom: 1.8,                // cap on how far they can zoom out
+    maxBounds: bounds
 });
 map.on('load', function() {
     map.addLayer({
@@ -156,11 +162,10 @@ map.on('load', function() {
         'source': {
             'type': 'raster',
             'tiles': [
-                'https://mapwarper.net/maps/tile/28337/{z}/{x}/{y}.png '
+                'https://mapwarper.net/maps/tile/28337/{z}/{x}/{y}.png  '
             ],
         },
-        'paint': {}
-    }, 'aeroway-taxiway');
+    }, 'inserruction1946-places-7w6tou');
 });
 map.on('click', 'inserruction1946-rinfleet', function (e) {
         new mapboxgl.Popup()
